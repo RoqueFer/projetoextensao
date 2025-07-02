@@ -1,0 +1,7 @@
+/* Seu CSS personalizado pode vir aqui */
+/* Ex: transições mais suaves, animações, etc. */
+
+/* Garante que o container do carrossel lide com o overflow */
+#carousel-inner img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura */
+}

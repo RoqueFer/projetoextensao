@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Acervo - Museu Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-800 font-sans text-gray-300">
+    <header class="bg-gray-900 shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-400">Museu Virtual</h1>
+            <nav class="space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-green-400 font-semibold">Início</a>
+                <a href="agendamento.html" class="text-gray-400 hover:text-green-400 font-semibold">Agendamento</a>
+                <a href="acervo.html" class="text-green-300 font-bold">Acervo</a>
+                <a href="admin.html" class="text-gray-400 hover:text-green-400 font-semibold">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-12 p-6 bg-gray-700 shadow-lg rounded-lg">
+        <section id="acervo" class="mb-8">
+            <h2 class="text-3xl font-bold text-green-400 mb-6 text-center">Conheça Nosso Acervo</h2>
+            <p class="text-md text-gray-400 mb-8 text-center">Explore a riqueza de nossa coleção. Clique em cada item para ver mais detalhes e sua história fascinante.</p>
+
+            <div id="acervo-items" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+
+            <div id="item-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden">
+                <div class="bg-gray-800 rounded-lg p-8 max-w-2xl mx-auto shadow-xl relative border border-gray-700">
+                    <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-400 text-3xl font-bold">&times;</button>
+                    <h3 id="modal-title" class="text-3xl font-bold text-green-400 mb-4"></h3>
+                    <img id="modal-image" src="" alt="Imagem do Item" class="w-full h-64 object-cover rounded-md mb-4 border border-gray-700">
+                    <p id="modal-description" class="text-gray-300 mb-4"></p>
+                    <p id="modal-details" class="text-gray-400 text-sm"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 p-6 mt-12 text-center text-gray-400">
+        <p>&copy; 2025 Museu Virtual. Todos os direitos reservados. Design com Tailwind CSS.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

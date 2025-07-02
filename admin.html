@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Museu Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwind-css@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-800 font-sans text-gray-300">
+    <header class="bg-gray-900 shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-400">Museu Virtual</h1>
+            <nav class="space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-green-400 font-semibold">Início</a>
+                <a href="agendamento.html" class="text-gray-400 hover:text-green-400 font-semibold">Agendamento</a>
+                <a href="acervo.html" class="text-gray-400 hover:text-green-400 font-semibold">Acervo</a>
+                <a href="admin.html" class="text-green-300 font-bold">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-12 p-6 bg-gray-700 shadow-lg rounded-lg max-w-4xl">
+        <section id="admin-dashboard">
+            <h2 class="text-3xl font-bold text-green-400 mb-6 text-center">Painel de Administração</h2>
+            <p class="text-md text-gray-400 mb-8 text-center">
+                Bem-vindo ao painel de controle do Museu Virtual. Aqui você poderá gerenciar o acervo, agendamentos, usuários e configurações do site.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-green-400 mb-3">Gerenciar Acervo</h3>
+                    <p class="text-gray-300 mb-4">Adicione, edite ou remova itens do acervo do museu.</p>
+                    <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-500">Acessar</a>
+                </div>
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-green-400 mb-3">Ver Agendamentos</h3>
+                    <p class="text-gray-300 mb-4">Visualize e gerencie os agendamentos de visitas.</p>
+                    <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-500">Acessar</a>
+                </div>
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-green-400 mb-3">Gerenciar Usuários</h3>
+                    <p class="text-gray-300 mb-4">Crie ou edite contas de usuários administradores.</p>
+                    <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-500">Acessar</a>
+                </div>
+                <div class="bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-green-400 mb-3">Configurações do Site</h3>
+                    <p class="text-gray-300 mb-4">Ajuste as configurações gerais do site e informações de contato.</p>
+                    <a href="#" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-green-500">Acessar</a>
+                </div>
+            </div>
+
+            <p class="mt-10 text-center text-gray-400 text-sm">
+                **Nota:** Este é um protótipo. O sistema de gerenciamento interno completo requer um backend e um banco de dados para funcionalidade real.
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 p-6 mt-12 text-center text-gray-400">
+        <p>&copy; 2025 Museu Virtual. Todos os direitos reservados. Design com Tailwind CSS.</p>
+    </footer>
+</body>
+</html>

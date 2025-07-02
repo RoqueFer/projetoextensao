@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Visitas - Museu Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-800 font-sans text-gray-300">
+    <header class="bg-gray-900 shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-400">Museu Virtual</h1>
+            <nav class="space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-green-400 font-semibold">Início</a>
+                <a href="agendamento.html" class="text-green-300 font-bold">Agendamento</a>
+                <a href="acervo.html" class="text-gray-400 hover:text-green-400 font-semibold">Acervo</a>
+                <a href="admin.html" class="text-gray-400 hover:text-green-400 font-semibold">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-12 p-6 bg-gray-700 shadow-lg rounded-lg max-w-3xl">
+        <section id="agendamento" class="mb-8">
+            <h2 class="text-3xl font-bold text-green-400 mb-6 text-center">Agende Sua Visita Presencial</h2>
+            <p class="text-md text-gray-400 mb-8 text-center">Preencha o formulário abaixo para reservar seu horário e explorar nosso acervo de perto. Aguardamos sua visita!</p>
+
+            <form id="scheduling-form" class="bg-gray-800 rounded-md p-6 border border-gray-700">
+                <div class="mb-5">
+                    <label for="name" class="block text-gray-300 text-sm font-semibold mb-2">Nome Completo:</label>
+                    <input type="text" id="name" name="name" class="shadow-sm appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-900" placeholder="Seu Nome" required>
+                </div>
+                <div class="mb-5">
+                    <label for="email" class="block text-gray-300 text-sm font-semibold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="shadow-sm appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-900" placeholder="seu.email@exemplo.com" required>
+                </div>
+                <div class="mb-5">
+                    <label for="phone" class="block text-gray-300 text-sm font-semibold mb-2">Telefone (opcional):</label>
+                    <input type="tel" id="phone" name="phone" class="shadow-sm appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-900" placeholder="(XX) XXXX-XXXX">
+                </div>
+                <div class="mb-5">
+                    <label for="date" class="block text-gray-300 text-sm font-semibold mb-2">Data Desejada:</label>
+                    <input type="date" id="date" name="date" class="shadow-sm appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-900" required>
+                </div>
+                <div class="mb-6">
+                    <label for="time" class="block text-gray-300 text-sm font-semibold mb-2">Hora Desejada:</label>
+                    <select id="time" name="time" class="shadow-sm border border-gray-600 rounded w-full py-2 px-3 text-gray-300 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-900" required>
+                        <option value="">Selecione um horário</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-md focus:outline-none focus:shadow-outline transition duration-300">Confirmar Agendamento</button>
+            </form>
+            <div id="scheduling-message" class="mt-6 p-4 bg-green-900 text-green-300 border border-green-700 rounded-md text-center hidden">Visita agendada com sucesso! Em breve você receberá um email de confirmação.</div>
+            <div id="scheduling-error" class="mt-6 p-4 bg-red-900 text-red-300 border border-red-700 rounded-md text-center hidden">Erro ao agendar a visita. Por favor, tente novamente.</div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 p-6 mt-12 text-center text-gray-400">
+        <p>&copy; 2025 Museu Virtual. Todos os direitos reservados. Design com Tailwind CSS.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
