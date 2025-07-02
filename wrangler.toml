@@ -1,9 +1,0 @@
-# Nome do seu worker/projeto. Será o nome que aparecerá no dashboard da Cloudflare.
-name = "extensaov"
-
-# O arquivo principal do seu Worker.
-# ‼️ IMPORTANTE: Altere "src/index.js" para o caminho correto do seu arquivo principal.
-main = "index.html"
-
-# Data de compatibilidade para garantir que seu Worker funcione com a versão correta da API.
-compatibility_date = "2024-07-01"
